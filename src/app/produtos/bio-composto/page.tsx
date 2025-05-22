@@ -1,5 +1,3 @@
-"use client";
-
 import { Lens } from "../../../components/magicui/lens";
 import Link from "next/link";
 import Image from "next/image";

@@ -1,5 +1,3 @@
-"use client";
-
 import { Lens } from "../../../components/magicui/lens";
 import Link from "next/link";
 import Image from "next/image";
@@ -34,7 +32,7 @@ export default function ProdutosPage() {
                     <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-blue-50 to-blue-100 p-8">
                       <Image
                         src="/Bio_controle.jpeg"
-                        alt="Bio Controle"
+                        alt="Bio Controle - Aumento da Produtividade no Plantio e no Solo | Deciclo"
                         width={400}
                         height={400}
                         className="object-contain select-none pointer-events-none"
