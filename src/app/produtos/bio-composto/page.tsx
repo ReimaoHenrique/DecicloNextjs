@@ -3,6 +3,7 @@
 import { Lens } from "../../../components/magicui/lens";
 import Link from "next/link";
 import Image from "next/image";
+import { WhatsappButton } from "../../../components/WhatsappButton/WhatsappButton";
 
 export default function ProdutosPage() {
   return (
@@ -70,6 +71,13 @@ export default function ProdutosPage() {
               <button className="border border-gray-300 text-gray-700 font-medium py-3 px-6 rounded-md hover:bg-gray-50 transition-colors">
                 Mais informações
               </button>
+            </div>
+
+            <div className="mt-4">
+              <WhatsappButton
+                phone="5544999999999"
+                message="Olá! Gostaria de mais informações sobre o Bio Composto."
+              />
             </div>
 
             <div className="mt-8 text-sm text-gray-500">
