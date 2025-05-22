@@ -47,35 +47,40 @@ export default function ProdutosPage() {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4 text-gray-800">
-                BIO COMPOSTO
-              </h2>
-              <div className="bg-gradient-to-r from-green-600/10 to-blue-500/10 text-green-800 px-3 py-1 rounded-full inline-block mb-4">
-                Em estoque
-              </div>
-              <p className="text-2xl font-bold mb-4 text-gray-900">R$ 999,99</p>
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-2 text-gray-700">
                   Descrição
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  O BIO COMPOSTO ACELERADOR DE COMPOSTAGEM é um produto
-                  biológico formulado com microrganismos eficientes e nutrientes
-                  naturais, desenvolvido para otimizar e acelerar o processo de
-                  compostagem. Sua composição inclui bactérias benéficas, como
-                  Bacillus thuringiensis, Bacillus subtilis, Lactobacillus
-                  plantarum e Bacillus cereus, combinadas com melado de cana,
-                  que atua como fonte de energia para os microrganismos.
+                  O <strong>BIO COMPOSTO</strong> ACELERADOR DE COMPOSTAGEM é um
+                  produto biológico formulado com microrganismos eficientes e
+                  nutrientes naturais, desenvolvido para otimizar e acelerar o
+                  processo de compostagem. Sua composição inclui bactérias
+                  benéficas, como Bacillus thuringiensis, Bacillus subtilis,
+                  Lactobacillus plantarum e Bacillus cereus, combinadas com
+                  melado de cana, que atua como fonte de energia para os
+                  microrganismos.
                 </p>
                 <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                  <li>Conteúdo: 20 litro</li>
                   <li>
-                    Composição: Bacillus thuringiensis, Bacillus subtilis,
-                    Lactobacillus plantarum, melado de cana e Bacillus cereus.
+                    <strong>Conteúdo:</strong> 20 litro
                   </li>
-                  <li>Embalagem reciclável</li>
-                  <li>Produzido com processos sustentáveis</li>
+                  <li>
+                    <strong>Composição:</strong> Bacillus thuringiensis,
+                    Bacillus subtilis, Lactobacillus plantarum, melado de cana e
+                    Bacillus cereus.
+                  </li>
+
+                  <li>
+                    <strong>Produzido com processos sustentáveis</strong>
+                  </li>
                 </ul>
+                <div className="bg-gradient-to-r from-green-600/10 to-blue-500/10 text-green-800 px-3 py-1 rounded-full inline-block mb-4">
+                  Em estoque
+                </div>
+                <p className="text-2xl font-bold mb-4 text-gray-900">
+                  R$ 999,99
+                </p>
               </div>
 
               <div className="mt-6">
@@ -90,7 +95,7 @@ export default function ProdutosPage() {
                     Saber Mais
                   </Link>
                   <WhatsappButton
-                    phone="5544999999999"
+                    phone="554491518915"
                     message="Olá! Gostaria de mais informações sobre o Bio Composto."
                   />
                 </div>
