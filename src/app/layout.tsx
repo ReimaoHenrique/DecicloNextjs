@@ -19,10 +19,11 @@ export const metadata: Metadata = {
     siteName: "Deciclo",
     images: [
       {
-        url: "/Deciclo_verde.png",
+        url: "https://deciclo.vercel.app/Deciclo_verde.png",
         width: 1200,
         height: 630,
         alt: "Deciclo Inteligência Ambiental",
+        secureUrl: "https://deciclo.vercel.app/Deciclo_verde.png",
       },
     ],
   },
@@ -30,6 +31,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@deciclo", // Substitua pelo seu handle do Twitter, se tiver
     creator: "@deciclo", // Substitua pelo seu handle do Twitter, se tiver
+    images: ["https://deciclo.vercel.app/Deciclo_verde.png"],
+  },
+  other: {
+    "og:image:secure_url": "https://deciclo.vercel.app/Deciclo_verde.png",
+    "og:image:type": "image/png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
   },
 };
 
