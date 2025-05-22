@@ -67,6 +67,24 @@ export function Lens({
     });
   }, []);
 
+  const handleTouchMove = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    e.preventDefault(); // Previne o scroll da página
+    const touch = e.touches[0];
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePosition({
+      x: touch.clientX - rect.left,
+      y: touch.clientY - rect.top,
+    });
+  }, []);
+
+  const handleTouchStart = useCallback(() => {
+    setIsHovering(true);
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    setIsHovering(false);
+  }, []);
+
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.key === "Escape") setIsHovering(false);
   }, []);
@@ -110,10 +128,13 @@ export function Lens({
   return (
     <div
       ref={containerRef}
-      className="relative z-20 overflow-hidden rounded-xl"
+      className="relative z-20 overflow-hidden rounded-xl touch-none"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onMouseMove={handleMouseMove}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
       onKeyDown={handleKeyDown}
       role="region"
       aria-label={ariaLabel}

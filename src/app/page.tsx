@@ -3,6 +3,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -38,11 +39,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <div className="w-full max-w-md h-80 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="text-5xl font-bold mb-2">Deciclo</div>
-                  <div className="text-xl">Inteligência Ambiental</div>
-                </div>
+              <div className="w-full max-w-md h-80 relative rounded-lg overflow-hidden">
+                <Image
+                  src="/Logo_deciclo_natureza.png"
+                  alt="Logo Deciclo"
+                  fill
+                  className="object-contain rounded-lg"
+                  priority
+                />
               </div>
             </div>
           </div>
